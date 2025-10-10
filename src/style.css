@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-main-color: rgb(209, 215, 238);
+  --color-text-color: black;
+  --text-28: 1.75rem;
+  --gap-my: 60px;
+}
