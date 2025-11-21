@@ -15,11 +15,17 @@
     </header>
 
     <main>
-      <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+
+      <div class="catalog  rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
         <div class="card border border-black rounded-xl p-4 relative">
-          <div class="img__wrapper">
+          <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+            <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+              <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse4.jpg" alt="найк"></div>
+              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse2.jpg" alt="найк"></div>
+              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse3.jpg" alt="найк"></div>
+     
+            </div>
           </div>
-          <img class="rounded-xl w-full aspect-2/3 object-cover" src="/img/nike1.jpg" alt="найк">
           <h3 class="font-bold text-black">
             <a href="#"
               class="inline-block hover:text-cyan-950 hover:scale-110 origin-center transition duration-300 focus:text-emerald-700 mt-2">Nike
@@ -31,7 +37,7 @@
           <button
             class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-          <div class="absolute top-8 right-8">
+          <div class="absolute top-8 right-8 z-100">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
               class="bi bi-heart-fill fill-white hover:fill-black transition duration-300 cursor-pointer"
               viewBox="0 0 16 16">

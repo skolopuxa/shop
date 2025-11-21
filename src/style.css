@@ -1,5 +1,6 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
+@import "flowbite/dist/flowbite.css";
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-main-color: rgb(209, 215, 238);
@@ -11,3 +12,24 @@
 .img__wrapper {
   position: relative;
 }
+
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .content-detail{
+    grid-template-columns: 1fr auto;
+   }
+
+
+   @media (max-width: 676px){
+    .content-detail{
+    grid-template-columns: 1fr;
+   }
+   }
