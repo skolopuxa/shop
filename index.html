@@ -11,19 +11,187 @@
 <body class="bg-main-color text-text-color dark:bg-cyan-900 dark:text-gray-300 h-full">
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
     <header>
-      <h1 class="text-3xl text-gray-900 font-bold uppercase ">Интернет магазин</h1></i>
+      <!-- <h1 class="text-3xl text-gray-900 font-bold uppercase ">Интернет магазин</h1></i>
+       -->
+      <nav class="bg-neutral-primary border-default">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+          <a href="http://localhost:5174/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="img/brandshop.png" class="h-10" alt="Logo" />
+          </a>
+          <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <a href="#"
+              class="text-heading bg-neutral-primary box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary-soft font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Зарегестрироваться</a>
+            <a href="#"
+              class="black bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Войти</a>
+            <button data-collapse-toggle="mega-menu" type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-lg md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-default"
+              aria-controls="mega-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+              </svg>
+            </button>
+          </div>
+          <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown"
+                  class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                  Company
+                  <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m19 9-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="mega-menu-dropdown"
+                  class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3">
+                  <div class="p-4 pb-0 text-heading md:pb-4">
+                    <ul class="space-y-3" aria-labelledby="mega-menu-dropdown-button">
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          About Us
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Library
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Resources
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Pro Version
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4 pb-0 md:pb-4">
+                    <ul class="space-y-3">
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Blog
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Newsletter
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Playground
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          License
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4">
+                    <ul class="space-y-3">
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Contact Us
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Support Center
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-body hover:text-fg-brand">
+                          Terms
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-heading border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Team</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-heading border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
+    <main class="flex">
 
-      <div class="catalog  rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+      <div class="filter">
+        <h2>Фильтрация</h2>
+        <form id="form-filter" action="">
+          <div class="form__item">
+            <div>
+              <label for="search">Ведите название модели</label>
+            </div>
+            <div>
+              <input id="search" name="search" type="text" placeholder="Поиск" required>
+            </div>
+          </div>
+          <div class="form__item">
+            <h3>Цвет</h3>
+            <div class="filter-color">
+              <div class="filter-color__item">
+                <input class="color-radio" type="radio" name="color" id="color-red">
+                <label class="color-label" for="color-red" style="background-color: red;" tabindex="0"></label>
+              </div>
+
+              <div class="filter-color__item">
+                <input class="color-radio" type="radio" name="color" id="color-blue">
+                <label class="color-label" for="color-blue" style="background-color: blue;" tabindex="0"></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- <label for="default-range" class="block mb-2.5 text-sm font-medium text-heading">Default range</label>
+<input id="default-range" type="range" value="50" class="w-full h-2 bg-neutral-quaternary rounded-full appearance-none cursor-pointer"> -->
+          <div class="relative mb-6">
+            <label for="labels-range-input" class="block">Labels range</label>
+            <input id="labels-range-input" type="range" value="1000" min="100" max="1500"
+              class="w-full h-2 bg-black rounded-full  cursor-pointer">
+            <span class="text-sm text-body absolute start-0 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6 ">3.000
+              &#8381;</span>
+            <span class="text-sm text-body absolute end-0 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6">100.000
+              &#8381;</span>
+          </div>
+
+          <div class="form__item">
+            <input class="form__btn" type="submit" value="Искать">
+          </div>
+        </form>
+
+      </div>
+      <div
+        class="catalog  rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
         <div class="card border border-black rounded-xl p-4 relative">
           <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
             <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
-              <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse4.jpg" alt="найк"></div>
-              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse2.jpg" alt="найк"></div>
-              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse3.jpg" alt="найк"></div>
-     
+              <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                  src="/img/muse4.jpg" alt="найк"></div>
+              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse2.jpg" alt="найк">
+              </div>
+              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse3.jpg" alt="найк">
+              </div>
+
             </div>
           </div>
           <h3 class="font-bold text-black">
