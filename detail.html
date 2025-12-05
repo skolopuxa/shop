@@ -12,13 +12,291 @@
 
     <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
         <header>
-            <h1 class="text-3xl text-gray-900 font-bold uppercase ">Интернет магазин</h1>
+            <nav class="bg-neutral-primary border-default">
+                <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+                    <a href="http://localhost:5174/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="img/brandshop.png" class="h-10" alt="Logo" />
+                    </a>
+                    <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                        <a href="#"
+                            class="text-heading bg-neutral-primary box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary-soft font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Зарегестрироваться</a>
+                        <a href="#"
+                            class="black bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Войти</a>
+                        <button data-collapse-toggle="mega-menu" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-lg md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-default"
+                            aria-controls="mega-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="M5 7h14M5 12h14M5 17h14" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                        <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-fg-brand border-b border-light hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
+                                    aria-current="page">Главная</a>
+                            </li>
+                            <li>
+                                <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown"
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                    Бренды
+                                    <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div id="mega-menu-dropdown"
+                                    class="absolute bg-white z-10 grid hidden w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3">
+                                    <div class="p-4 pb-0 text-heading md:pb-4">
+                                        <ul class="space-y-3" aria-labelledby="mega-menu-dropdown-button">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Adidas
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Nike
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Puma
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Stone Island
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4 pb-0 md:pb-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    C.P. Company
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Rip&Dip
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    The Ragget Priest
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Kangol
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Vans
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Y-3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    The North Face
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button id="mega-menu-dropdown-button1" data-dropdown-toggle="mega-menu-dropdown1"
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                    Мужское
+                                    <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div id="mega-menu-dropdown1"
+                                    class="absolute bg-white z-10 grid hidden w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3">
+                                    <div class="p-4 pb-0 text-heading md:pb-4">
+                                        <ul class="space-y-3" aria-labelledby="mega-menu-dropdown-button">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Футболки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Джинсы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Шорты
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Брюки
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4 pb-0 md:pb-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Поло
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Рубашки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Куртки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Ботинки
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Кроссовки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Свитеры
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Лонгсливы
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <button id="mega-menu-dropdown-button2" data-dropdown-toggle="mega-menu-dropdown2"
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-heading border-b border-light md:w-auto hover:bg-neutral-secondary-soft md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                    Женское
+                                    <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div id="mega-menu-dropdown2"
+                                    class="absolute bg-white z-10 grid hidden w-auto grid-cols-2 text-sm bg-neutral-primary-soft border border-default rounded-base shadow md:grid-cols-3">
+                                    <div class="p-4 pb-0 text-heading md:pb-4">
+                                        <ul class="space-y-3" aria-labelledby="mega-menu-dropdown-button2">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Футболки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Лонгсливы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Поло
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Свитеры
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4 pb-0 md:pb-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Водолазки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Юбки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Платья
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Шорты
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4">
+                                        <ul class="space-y-3">
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Кроссовки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Ботинки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-body hover:text-fg-brand">
+                                                    Кеды
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
         </header>
 
         <main>
             <div class="grid content-detail gap-3">
                 <div>
-                    <img class="rounded-xl aspect-3/3 object-cover" src="/img/muse3.jpg">
+                    <img class="rounded-xl aspect-3/3 w-200 h-200 object-cover" src="/img/muse3.jpg">
                 </div>
 
                 <div class="rounded-xl p-20 relative bg-[#f2f2f2]">
@@ -35,7 +313,7 @@
                     <p class="text-[20px] relative top-5">Доступные расцветки</p>
                     <p class="text-[14px] relative top-5">Артикул</p>
                     <p class="text-[14px] relative top-5">JI2060</p>
-                    <div class=" left-100">
+                    <div class="ml-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-copy" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -45,13 +323,21 @@
                     <p class="text-[14px] relative top-5">Код товара</p>
 
                     <p class="text-[14px] relative top-5">489040</p>
-                    <div class=" left-100">
+                    <div class="ml-100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-copy" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
                         </svg>
                     </div>
+                    <p class="text-[14px] relative top-5">В избранное</p>
+                    <div class="absolute ml-100 z-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              class="bi bi-heart-fill fill-black hover:fill-pink-500 z-5 transition duration-300 cursor-pointer"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+            </svg>
+          </div>
 
                     <div id="accordion-collapse" data-accordion="collapse"
                         class="rounded-base mt-10 border border-default overflow-hidden shadow-xs ">
@@ -91,14 +377,14 @@
 
                     <!-- Modal toggle -->
                     <button data-modal-target="delivery-modal" data-modal-toggle="delivery-modal"
-                        class="text-black mt-5 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+                        class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none mr-4"
                         type="button">
                         Доставка и оплата
                     </button>
 
                     <!-- Modal toggle -->
                     <button data-modal-target="return-modal" data-modal-toggle="return-modal"
-                        class="text-black mt-5 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+                        class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
                         type="button">
                         Возврат
                     </button>
@@ -111,7 +397,31 @@
 
     </main>
     <footer>
-        <p>&copy; Ивлева Кира, 2025 г.</p>
+       <footer class="bg-neutral-primary-soft rounded-base border-default m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="http://localhost:5174/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="img/brandshop.png" class="h-10" alt="Logo" />
+                <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Brand Shop</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-body sm:mb-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-body sm:text-center">© 2025 <a href="http://localhost:5174/" class="hover:underline">IvlevaKira™</a>. All Rights Reserved.</span>
+    </div>
     </footer>
     </div>
     <!-- Main modal -->
@@ -154,7 +464,7 @@
                 <!-- Modal footer -->
                 <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
                     <button data-modal-hide="default-modal" type="button"
-                        class="text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Окей</button>
+                        class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Окей</button>
                 </div>
 
             </div>
@@ -205,7 +515,7 @@
                 <!-- Modal footer -->
                 <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
                     <button data-modal-hide="default-modal" type="button"
-                        class="text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Окей</button>
+                        class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Окей</button>
                 </div>
 
             </div>

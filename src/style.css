@@ -61,10 +61,6 @@
   box-shadow: none;
 }
 
-.form__item .form__btn {
-  background-color: blueviolet;
-  color: aliceblue;
-}
 
 .form__item input[type=text]:valid {
   border-color: rgb(16, 65, 172);
