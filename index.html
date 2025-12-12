@@ -9,22 +9,74 @@
 </head>
 
 <body class="bg-main-color text-text-color dark:bg-cyan-900 dark:text-gray-300 h-full">
-  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
 
-    <header>
 
-      <nav class="bg-neutral-primary border-default">
-        <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+<!-- <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-default">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Flowbite</span>
+    </a>
+    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+              Dropdown 
+              <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button>
+      
+          <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
+                <li>
+                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                </li>
+              </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+
+
+<nav class="bg-neutral-primary border-default fixed w-full z-20 top-0 start-0 bg-red-100">
+        <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="http://localhost:5174/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="img/brandshop.png" class="h-10" alt="Logo" />
           </a>
+
+
           <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
-            <a href="#"
-              class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none mr-4">Зарегестрироваться</a>
-            <a href="#"
-              class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none mr-4">Войти</a>
+
             <button data-collapse-toggle="mega-menu" type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-lg md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-default"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
               aria-controls="mega-menu" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -32,7 +84,7 @@
               </svg>
             </button>
           </div>
-          <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+          <div id="mega-menu" class="items-center hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
               <li>
                 <a href="#"
@@ -286,16 +338,48 @@
               <li>
 
             </ul>
+            <div class="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-cart2 fill-black hover:fill-pink-500 z-5 transition duration-300 cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+              </svg>
+            </div>
+
+            <div class="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 z-5 transition duration-300 cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
+            <a href="#"
+              class=" text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110  bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ">Зарегестрироваться</a>
+            <a href="#"
+              class="text-black hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 mt-5 bg-brand box-border border border-default-medium hover:bg-brand-strong focus:ring-brand-medium shadow-xl font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none mr-4">Войти</a>
           </div>
         </div>
 
-      </nav>
+      </nav> 
+  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
+
+    <header>
+
+
+
+
+
+
+
+
+       
     </header>
 
     <main class="flex">
 
-      <div class="filter">
-        <h2>Фильтрация</h2>
+      <div class="filter font-medium">
+        <h2>Фильтр</h2>
         <form id="form-filter" action="">
           <div class="form__item">
             <div>
@@ -305,7 +389,7 @@
               <input id="search" name="search" type="text" placeholder="Поиск" required>
             </div>
           </div>
-          <div class="form__item">
+          <!-- <div class="form__item">
             <h3>Цвет</h3>
             <div class="filter-color">
               <div class="filter-color__item">
@@ -318,12 +402,135 @@
                 <label class="color-label" for="color-blue" style="background-color: blue;" tabindex="0"></label>
               </div>
             </div>
+          </div> -->
+
+          <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+            <label for="dropdown-user-50" class="w-full flex items-center justify-between">
+              <div class="inline-flex items-center font-medium">Мужское
+              </div>
+              <input id="dropdown-user-50" type="checkbox" value=""
+                class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+            </label>
+          </li>
+          <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+            <label for="dropdown-user-51" class="w-full flex items-center justify-between">
+              <div class="inline-flex items-center font-medium">Женское
+              </div>
+              <input id="dropdown-user-51" type="checkbox" value=""
+                class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+            </label>
+          </li>
+
+          <button id="dropdownUsersSearchButton" data-dropdown-toggle="dropdownSearch" data-dropdown-placement="bottom"
+            class="inline-flex items-center justify-center text-black bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-brand-medium font-medium leading-5 rounded-base font-medium px-4 py-2.5 focus:outline-none"
+            type="button">Цвет
+            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 9-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownSearch"
+            class="z-10 bg-white hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-xl w-54">
+            <div class="bg-neutral-primary-medium border-b border-default-medium p-2 rounded-t-base">
+              <label for="search" class="sr-only">Искать</label>
+              <input type="text" id="search"
+                class="bg-neutral-secondary-strong border border-default-strong text-heading text-sm rounded focus:ring-brand focus:border-brand block w-full px-2.5 py-2 shadow-xs placeholder:text-body"
+                placeholder="Поиск" required />
+            </div>
+            <ul class="h-48 p-2 text-sm text-body font-medium overflow-y-auto" aria-labelledby="dropdownSearchButton">
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-9" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Красный
+                  </div>
+                  <input id="dropdown-user-9" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-10" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Синий
+                  </div>
+                  <input id="dropdown-user-10" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-11" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Желтый
+                  </div>
+                  <input id="dropdown-user-11" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-12" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Зеленый
+                  </div>
+                  <input id="dropdown-user-12" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-13" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Фиолетовый
+                  </div>
+                  <input id="dropdown-user-13" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-14" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Розовый
+                  </div>
+                  <input id="dropdown-user-14" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-15" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Черный
+                  </div>
+                  <input id="dropdown-user-15" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+              <li class="w-full flex items-center p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                <label for="dropdown-user-16" class="w-full flex items-center justify-between">
+                  <div class="inline-flex items-center font-medium">
+                    Голубой
+                  </div>
+                  <input id="dropdown-user-16" type="checkbox" value=""
+                    class="w-4 h-4 border border-default-strong rounded-xs bg-neutral-secondary-strong focus:ring-brand-soft">
+                </label>
+              </li>
+            </ul>
+            <div class="bg-neutral-primary-medium border-t border-default-medium p-2 rounded-b-base">
+              <button type="button"
+                class="w-full inline-flex items-center justify-center text-black hover:bg-[#e5e4e4] transition focus:bg-red-400 bg-danger box-border border border-transparent hover:bg-danger-strong focus:ring-danger-medium shadow-xs font-medium leading-5 rounded text-xs px-3 py-1.5 focus:outline-none">
+                <svg class="w-3.5 h-3.5 me-1.5 -ms-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z" />
+                </svg>
+                Сбросить
+              </button>
+            </div>
           </div>
 
           <div class="relative mb-4">
-            <label for="labels-range-input" class="block">Labels range</label>
+            <label for="labels-range-input" class="block">Цена</label>
             <input id="labels-range-input" type="range" value="100" min="3000" max="100000"
-              class="w-full h-2 bg-black rounded-full  cursor-pointer">
+              class="w-full h-2 bg-black rounded-full cursor-pointer">
             <span class="text-sm text-body absolute start-0 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6 ">3.000
               &#8381;</span>
             <span class="text-sm text-body absolute end-0 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6">100.000
@@ -337,249 +544,362 @@
         </form>
 
       </div>
-      <div  class="catalog  rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-        <div class="card border border-black rounded-xl p-4 relative">
-          <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
-            <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
-              <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
-                  src="/img/muse5.jpg" alt="найк"></div>
-              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse6.jpg" alt="найк">
+      <div>
+        <div
+          class="catalog  rounded-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+          <div class="card border border-black rounded-xl p-4 relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/muse5.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse6.jpg" alt="найк">
+                </div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse3.jpg" alt="найк">
+                </div>
               </div>
-              <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/muse3.jpg" alt="найк">
-              </div>
+            </div>
+            <h3 class="font-bold text-black">
+              <a href="#"
+                class="inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">Nike
+                Air Muse</a>
+            </h3>
+            <p class="text-[14px]">Женские кроссовки</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">24.990 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 z-5 transition duration-300 cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
             </div>
           </div>
-          <h3 class="font-bold text-black">
-            <a href="#"
-              class="inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">Nike
-              Air Muse</a>
-          </h3>
-          <p class="text-[14px]">Женские кроссовки</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">24.990 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-          <div class="absolute top-8 right-8 z-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 z-5 transition duration-300 cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
-          </div>
-        </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/buffalo 1.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/buffalo2.jpg"
+                    alt="найк">
+                </div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/buffalo3.jpg"
+                    alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Buffalo</h3>
+            <p class="text-[14px]">Женские кроссовки</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold grow">20.000 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full aspect-2/3 object-cover" src="/img/buffalo 1.jpg" alt="найк">
-          <h3 class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Buffalo</h3>
-          <p class="text-[14px]">Женские кроссовки</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold grow">20.000 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
 
-        </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/nike.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/nike2.jpg" alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Nike Air Trainer 1 SP high-top</h3>
+            <p class="text-[14px]">Женские кроссовки высокие</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">15.990 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/nike.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Nike Air Trainer 1 SP high-top</h3>
-          <p class="text-[14px]">Женские кроссовки высокие</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">15.990 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/vanswhite.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/vansbrown.jpg"
+                    alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Vans Knu Skool</h3>
+            <p class="text-[14px]">Женские кеды</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">7.990 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/vanswhite.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Vans Knu Skool</h3>
-          <p class="text-[14px]">Женские кеды</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">7.990 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/tl.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/tl2.jpg" alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Nike TL</h3>
+            <p class="text-[14px]">Женские кроссовки</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">12.500 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/tl.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Nike TL</h3>
-          <p class="text-[14px]">Женские кроссовки</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">12.500 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/adidas.jpg" alt="найк">
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Adidas forum 84 high</h3>
+            <p class="text-[14px]">Женские кроссовки высокие</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">7.660 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/adidas.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Adidas forum 84 high</h3>
-          <p class="text-[14px]">Женские кроссовки высокие</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">7.660 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/air.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/air2.jpg" alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Nike Air More Uptempo</h3>
+            <p class="text-[14px]">Женские кроссовки высокие</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">17.900 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/air.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Nike Air More Uptempo</h3>
-          <p class="text-[14px]">Женские кроссовки высокие</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">17.900 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/vans.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/vans2.jpg" alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Vans Knu Skool</h3>
+            <p class="text-[14px]">Женские кеды</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">7.990 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/vans.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Vans Knu Skool</h3>
-          <p class="text-[14px]">Женские кеды</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">7.990 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/p9000.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/p9000(2).jpg"
+                    alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Nike P-9000</h3>
+            <p class="text-[14px]">Женские кроссовки</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">15.000 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img//p9000.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Nike P-9000</h3>
-          <p class="text-[14px]">Женские кроссовки</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">15.000 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
+          <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
+            <div class="swiper mySwiper rounded-xl w-full  aspect-2/3 object-cover">
+              <div class="swiper-wrapper w-full  aspect-2/3 object-cover">
+                <div class="swiper-slide  w-full  aspect-2/3 object-cover"><img class=" w-full  aspect-2/3 object-cover"
+                    src="/img/rafsimons.jpg" alt="найк"></div>
+                <div class="swiper-slide"><img class=" w-full  aspect-2/3 object-cover" src="/img/rafsimons2.jpg"
+                    alt="найк">
+                </div>
+              </div>
+            </div>
+            <h3
+              class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
+              Adidas X Raf Simons</h3>
+            <p class="text-[14px]">Женские кроссовки</p>
+            <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
+            <p class="text-[20px] font-bold">45.000 &#8381;</p>
+            <button
+              class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
 
-        </div>
-        <div class="card border border-black rounded-xl p-4 flex flex-col h-full relative">
-          <img class="rounded-xl w-full  aspect-2/3 object-cover" src="/img/rafsimons.jpg" alt="найк">
-          <h3
-            class="font-bold inline-block hover:text-indigo-400 hover:scale-110 origin-center transition duration-300 focus:text-indigo-800 mt-2">
-            Adidas X Raf Simons</h3>
-          <p class="text-[14px]">Женские кроссовки</p>
-          <p class="text-[14px]"><i class="bi bi-star-fill"></i> 5,0</p>
-          <p class="text-[20px] font-bold">45.000 &#8381;</p>
-          <button
-            class="bg-[#f2f2f2] rounded-xl p-4 w-full hover:bg-[#e5e4e4] hover:scale-110 transition focus:bg-indigo-300 focus:scale-110 my-2">Заказать</button>
+            <div class="absolute top-8 right-8 z-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
 
-          <div class="absolute top-8 right-8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              class="bi bi-heart-fill fill-black hover:fill-pink-500 transition duration-300  cursor-pointer"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-            </svg>
           </div>
-
         </div>
+        <nav aria-label="Page navigation example" class="mt-10  ">
+          <ul class="flex -space-x-px text-sm justify-center">
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium rounded-s-base text-sm w-9 h-9 focus:outline-none">
+                <span class="sr-only">Previous</span>
+                <svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m15 19-7-7 7-7" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">1</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">2</a>
+            </li>
+            <li>
+              <a href="#" aria-current="page"
+                class="flex items-center justify-center text-fg-brand bg-neutral-tertiary-medium box-border border border-default-medium hover:text-fg-brand font-medium text-sm w-9 h-9 focus:outline-none">3</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">4</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-9 h-9 focus:outline-none">5</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium rounded-e-base text-sm w-9 h-9 focus:outline-none">
+                <span class="sr-only">Next</span>
+                <svg class="w-4 h-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m9 5 7 7-7 7" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
 
-<footer>
-<footer class="bg-neutral-primary-soft rounded-base border-default m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+    <footer>
+      <footer class="bg-neutral-primary-soft rounded-base border-default m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
             <a href="http://localhost:5174/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="img/brandshop.png" class="h-10" alt="Logo" />
-                <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Brand Shop</span>
+              <img src="img/brandshop.png" class="h-10" alt="Logo" />
+              <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Brand Shop</span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-body sm:mb-0">
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Contact</a>
+              </li>
             </ul>
+          </div>
+          <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+          <span class="block text-sm text-body sm:text-center">© 2025 <a href="http://localhost:5174/"
+              class="hover:underline">IvlevaKira™</a>. All Rights Reserved.</span>
         </div>
-        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-body sm:text-center">© 2025 <a href="http://localhost:5174/" class="hover:underline">IvlevaKira™</a>. All Rights Reserved.</span>
-    </div>
-</footer>
+      </footer>
 
   </div>
   <script type="module" src="/src/main.js"></script>
