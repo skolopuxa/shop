@@ -49,11 +49,6 @@
   transition: 0.3s;
 }
 
-.form__item input:focus {
-  outline: 1px solid black;
-  outline-offset: 5px;
-  transition: 0.3s;
-}
 
 .form__item input:disabled:hover,
 .form__item input:disabled:focus {
